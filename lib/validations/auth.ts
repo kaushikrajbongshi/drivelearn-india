@@ -77,7 +77,6 @@ export const loginSchema = z.object({
 
 export type LoginFormData = z.infer<typeof loginSchema>;
 
-
 export const forgotPasswordSchema = z.object({
   email: z
     .string()
@@ -90,6 +89,18 @@ export const forgotPasswordSchema = z.object({
     }),
 });
 
-export type ForgotPasswordFormData = z.infer<
-  typeof forgotPasswordSchema
->;
+export type ForgotPasswordFormData = z.infer<typeof forgotPasswordSchema>;
+
+export const verifyOtpSchema = z.object({
+  otp: z
+    .string()
+    .trim()
+    .length(6, {
+      message: "Please enter the 6-digit verification code.",
+    })
+    .regex(/^\d+$/, {
+      message: "OTP must contain only numbers.",
+    }),
+});
+
+export type VerifyOtpFormData = z.infer<typeof verifyOtpSchema>;

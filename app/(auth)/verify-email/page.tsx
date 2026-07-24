@@ -1,9 +1,5 @@
-import React from 'react'
+import VerifyOtpForm from "@/features/auth/components/VerifyOtpForm";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function VerifyEmailPage() {
+  return <VerifyOtpForm />;
 }
-
-export default page
