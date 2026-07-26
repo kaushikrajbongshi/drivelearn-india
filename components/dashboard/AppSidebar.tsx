@@ -19,6 +19,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import UserNav from "./UserNav";
 
 interface AppSidebarProps {
     items: NavItem[];
@@ -76,7 +77,7 @@ export default function AppSidebar({
 
             {/* Footer */}
             <SidebarFooter className="border-t p-4 text-xs text-muted-foreground">
-                DriveLearn India
+               <UserNav/>
             </SidebarFooter>
 
         </Sidebar>

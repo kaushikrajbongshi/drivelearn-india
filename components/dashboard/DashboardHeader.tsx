@@ -2,13 +2,9 @@
 
 import SearchBar from "./SearchBar";
 import NotificationNav from "./NotificationNav";
-import DashboardBreadcrumb from "./DashboardBreadcrumb";
-
 import ThemeToggle from "@/components/theme-toggle";
-
-import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import UserNav from "./UserNav";
+
 
 export default function DashboardHeader() {
     return (
@@ -19,13 +15,13 @@ export default function DashboardHeader() {
                 {/* Sidebar */}
                 <SidebarTrigger />
 
-                <Separator
-                    orientation="vertical"
-                    className="h-5"
-                />
+                    {/* <Separator
+                        orientation="vertical"
+                        className="h-5"
+                    /> */}
 
                 {/* Breadcrumb */}
-                <DashboardBreadcrumb />
+                {/* <DashboardBreadcrumb /> */}
 
                 {/* Right */}
                 <div className="ml-auto flex items-center gap-3">
@@ -36,7 +32,7 @@ export default function DashboardHeader() {
 
                     <NotificationNav />
 
-                    <UserNav />
+                    {/* <UserNav /> */}
 
                 </div>
 

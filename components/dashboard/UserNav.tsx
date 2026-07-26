@@ -25,8 +25,9 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
+import { useSidebar } from "@/components/ui/sidebar";
 export default function UserNav() {
+    const { state } = useSidebar();
     return (
         <DropdownMenu>
 
@@ -43,17 +44,21 @@ export default function UserNav() {
                     <AvatarFallback>KR</AvatarFallback>
                 </Avatar>
 
-                <div className="hidden text-left md:block">
-                    <p className="text-sm font-semibold">
-                        Kaushik Rajbongshi
-                    </p>
+                {state === "expanded" && (
+                    <div className="min-w-0 flex-1 text-left">
+                        <p className="truncate text-sm font-semibold">
+                            Kaushik Rajbongshi
+                        </p>
 
-                    <p className="text-xs text-muted-foreground">
-                        Learner
-                    </p>
-                </div>
+                        <p className="truncate text-xs text-muted-foreground">
+                            Learner
+                        </p>
+                    </div>
+                )}
 
-                <ChevronsUpDown className="hidden size-4 opacity-60 md:block" />
+                {state === "expanded" && (
+                    <ChevronsUpDown className="size-4 opacity-60" />
+                )}
             </DropdownMenuTrigger>
 
             <DropdownMenuContent
