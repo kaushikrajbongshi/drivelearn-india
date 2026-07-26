@@ -1,7 +1,6 @@
 import type { NavItem } from "../types/nav";
 
 export const adminNav: NavItem[] = [
- 
   {
     title: "Dashboard",
     url: "/admin/dashboard",
@@ -16,6 +15,11 @@ export const adminNav: NavItem[] = [
     title: "Schools",
     url: "/admin/schools",
     icon: "graduation-cap",
+  },
+  {
+    title: "Instructors", 
+    url: "/admin/instructors",
+    icon: "user-round-cog", 
   },
   {
     title: "States",

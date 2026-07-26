@@ -13,6 +13,13 @@ import {
   Users,
   MoreHorizontal,
   ShieldBan,
+  CalendarDays,
+  ClipboardCheck,
+  ClipboardList,
+  CarFront,
+  LayoutDashboard,
+  Settings,
+  User,
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -35,6 +42,13 @@ export const dashboardIcons = {
   arrowRight: ArrowRight,
   transfer: ArrowLeftRight,
   more: MoreHorizontal,
+  calendar: CalendarDays,
+  clipboard: ClipboardList,
+  clipboardCheck: ClipboardCheck,
+  car: CarFront,
+  dashboard: LayoutDashboard,
+  settings: Settings,
+  user: User,
 } as const;
 
 export type DashboardIcon = keyof typeof dashboardIcons;
