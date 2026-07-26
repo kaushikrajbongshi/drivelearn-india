@@ -12,6 +12,7 @@ import {
   UserPlus,
   Users,
   MoreHorizontal,
+  ShieldBan,
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -24,6 +25,7 @@ export const dashboardIcons = {
   userPlus: UserPlus,
   creditCard: CreditCard,
   shieldCheck: ShieldCheck,
+  shieldBan: ShieldBan,
 
   add: CirclePlus,
   report: FileText,
