@@ -6,7 +6,7 @@ import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
 import LearnerToolbar from "@/components/dashboard/learners/LearnerToolbar";
 import LearnerTable from "@/components/dashboard/learners/LearnerTable";
-import LearnerPagination from "@/components/dashboard/learners/LearnerPagination";
+import DataTablePagination from "@/components/common/DataTablePagination";
 import { learners } from "@/features/admin/learners/data/learners";
 
 export default function AdminLearnersPage() {
@@ -78,7 +78,7 @@ export default function AdminLearnersPage() {
                 learners={paginatedLearners}
             />
 
-            <LearnerPagination
+            <DataTablePagination
                 currentPage={page}
                 totalPages={totalPages}
                 onPageChange={setPage}
