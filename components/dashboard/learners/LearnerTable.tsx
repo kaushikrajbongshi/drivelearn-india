@@ -1,10 +1,9 @@
 "use client";
 
-import type { Instructor } from "@/features/admin/instructors/types/instructor";
+import type { Learner } from "@/features/admin/learners/types/learner";
 
-import InstructorTableRow from "./InstructorTableRow";
-import InstructorMobileCard from "./InstructorMobileCard";
-
+import LearnerTableRow from "./LearnerTableRow";
+import LearnerMobileCard from "./LearnerMobileCard";
 import {
     Table,
     TableBody,
@@ -13,18 +12,18 @@ import {
     TableRow,
 } from "@/components/ui/table";
 
-interface InstructorTableProps {
-    instructors: Instructor[];
+interface LearnerTableProps {
+    learners: Learner[];
 }
 
-export default function InstructorTable({
-    instructors,
-}: InstructorTableProps) {
-    if (instructors.length === 0) {
+export default function LearnerTable({
+    learners,
+}: LearnerTableProps) {
+    if (learners.length === 0) {
         return (
             <div className="rounded-xl border p-12 text-center">
                 <h3 className="text-lg font-semibold">
-                    No instructors found
+                    No learners found
                 </h3>
 
                 <p className="mt-2 text-sm text-muted-foreground">
@@ -41,13 +40,13 @@ export default function InstructorTable({
                 <Table>
                     <TableHeader>
                         <TableRow>
-                            <TableHead>Instructor</TableHead>
+                            <TableHead>Learner</TableHead>
 
                             <TableHead>School</TableHead>
 
-                            <TableHead>Experience</TableHead>
+                            <TableHead>Instructor</TableHead>
 
-                            <TableHead>Learners</TableHead>
+                            <TableHead>Course</TableHead>
 
                             <TableHead>Status</TableHead>
 
@@ -56,10 +55,10 @@ export default function InstructorTable({
                     </TableHeader>
 
                     <TableBody>
-                        {instructors.map((instructor) => (
-                            <InstructorTableRow
-                                key={instructor.id}
-                                instructor={instructor}
+                        {learners.map((learner) => (
+                            <LearnerTableRow
+                                key={learner.id}
+                                learner={learner}
                             />
                         ))}
                     </TableBody>
@@ -68,10 +67,10 @@ export default function InstructorTable({
 
             {/* Mobile */}
             <div className="space-y-4 lg:hidden">
-                {instructors.map((instructor) => (
-                    <InstructorMobileCard
-                        key={instructor.id}
-                        instructor={instructor}
+                {learners.map((learner) => (
+                    <LearnerMobileCard
+                        key={learner.id}
+                        learner={learner}
                     />
                 ))}
             </div>

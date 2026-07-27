@@ -17,9 +17,14 @@ export const adminNav: NavItem[] = [
     icon: "graduation-cap",
   },
   {
-    title: "Instructors", 
+    title: "Instructors",
     url: "/admin/instructors",
-    icon: "user-round-cog", 
+    icon: "user-round-cog",
+  },
+  {
+    title: "Learners",
+    url: "/admin/learners",
+    icon: "graduation-cap",
   },
   {
     title: "States",
