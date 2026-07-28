@@ -15,7 +15,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import type { User } from "@/features/admin/users/types/user";
+import type { User } from "@/features/users/types/user";
 
 import UserActions from "./UserActions";
 import UserRoleBadge from "./UserRoleBadge";

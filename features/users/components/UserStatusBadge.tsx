@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 import { cn } from "@/lib/utils";
 
-import type { UserStatus } from "@/features/admin/users/types/user";
+import type { UserStatus } from "@/features/users/types/user";
 
 interface UserStatusBadgeProps {
   status: UserStatus;

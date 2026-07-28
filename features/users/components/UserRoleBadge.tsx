@@ -7,7 +7,7 @@ import {
   type DashboardIcon,
 } from "@/features/dashboard/config/dashboard-icons";
 
-import type { UserRole } from "@/features/admin/users/types/user";
+import type { UserRole } from "@/features/users/types/user";
 
 interface UserRoleBadgeProps {
   role: UserRole;

@@ -3,12 +3,12 @@
 import { useEffect, useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import UserPagination from "@/components/dashboard/users/UserPagination";
 
 import SchoolTable from "@/components/dashboard/schools/SchoolTable";
 import SchoolToolbar from "@/components/dashboard/schools/SchoolToolbar";
 
 import { schools } from "@/features/admin/schools/data/schools";
+import UserPagination from "@/features/users/components/UserPagination";
 
 const ITEMS_PER_PAGE = 10;
 
