@@ -19,7 +19,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import type { State } from "@/features/admin/states/types/state";
+import type { State } from "@/features/states/types/state";
 
 interface StateActionsProps {
     state: State;

@@ -22,7 +22,7 @@ import InfoItem from "@/components/common/InfoItem";
 
 import StateStatusBadge from "@/components/dashboard/states/StateStatusBadge";
 
-import { states } from "@/features/admin/states/data/states";
+import { states } from "@/features/states/data/states";
 
 interface StateDetailsPageProps {
     params: Promise<{

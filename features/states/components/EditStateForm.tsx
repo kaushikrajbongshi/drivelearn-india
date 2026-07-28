@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 import StateForm from "./StateForm";
 
-import type { State } from "@/features/admin/states/types/state";
+import type { State } from "@/features/states/types/state";
 
 interface EditStateFormProps {
     state: State;

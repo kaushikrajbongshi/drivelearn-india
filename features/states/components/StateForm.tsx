@@ -11,7 +11,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-import type { State } from "@/features/admin/states/types/state";
+import type { State } from "@/features/states/types/state";
 
 interface StateFormProps {
     defaultValues?: Partial<State>;

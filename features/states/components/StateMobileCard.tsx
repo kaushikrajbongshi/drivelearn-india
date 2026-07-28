@@ -15,7 +15,7 @@ import {
 
 import StateStatusBadge from "./StateStatusBadge";
 
-import type { State } from "@/features/admin/states/types/state";
+import type { State } from "@/features/states/types/state";
 
 interface StateMobileCardProps {
     state: State;

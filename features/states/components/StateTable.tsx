@@ -10,7 +10,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 
-import type { State } from "@/features/admin/states/types/state";
+import type { State } from "@/features/states/types/state";
 
 import StateMobileCard from "./StateMobileCard";
 import StateTableRow from "./StateTableRow";
