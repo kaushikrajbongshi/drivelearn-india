@@ -11,7 +11,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-import type { City } from "@/features/admin/cities/types/city";
+import type { City } from "@/features/cities/types/city";
 import { states } from "@/features/states/data/states";
 
 interface CityFormProps {

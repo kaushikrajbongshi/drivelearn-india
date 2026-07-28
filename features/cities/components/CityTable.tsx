@@ -10,7 +10,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 
-import type { City } from "@/features/admin/cities/types/city";
+import type { City } from "@/features/cities/types/city";
 
 import CityMobileCard from "./CityMobileCard";
 import CityTableRow from "./CityTableRow";

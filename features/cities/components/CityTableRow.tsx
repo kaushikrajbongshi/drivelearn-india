@@ -10,7 +10,7 @@ import {
 import CityActions from "./CityActions";
 import CityStatusBadge from "./CityStatusBadge";
 
-import type { City } from "@/features/admin/cities/types/city";
+import type { City } from "@/features/cities/types/city";
 
 interface CityTableRowProps {
     city: City;

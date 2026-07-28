@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 import CityForm from "./CityForm";
 
-import type { City } from "@/features/admin/cities/types/city";
+import type { City } from "@/features/cities/types/city";
 
 interface EditCityFormProps {
     city: City;

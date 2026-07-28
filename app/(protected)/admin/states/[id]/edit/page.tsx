@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import EditStateForm from "@/components/dashboard/states/EditStateForm";
+import EditStateForm from "@/features/states/components/EditStateForm";
 
 import { states } from "@/features/states/data/states";
 

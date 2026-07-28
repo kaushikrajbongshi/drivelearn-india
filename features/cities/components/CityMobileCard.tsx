@@ -15,7 +15,7 @@ import {
 
 import CityStatusBadge from "./CityStatusBadge";
 
-import type { City } from "@/features/admin/cities/types/city";
+import type { City } from "@/features/cities/types/city";
 
 interface CityMobileCardProps {
     city: City;

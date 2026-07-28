@@ -21,9 +21,9 @@ import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
 import InfoItem from "@/components/common/InfoItem";
 
-import CityStatusBadge from "@/components/dashboard/cities/CityStatusBadge";
+import CityStatusBadge from "@/features/cities/components/CityStatusBadge";
 
-import { cities } from "@/features/admin/cities/data/cities";
+import { cities } from "@/features/cities/data/cities";
 
 interface CityDetailsPageProps {
     params: Promise<{
