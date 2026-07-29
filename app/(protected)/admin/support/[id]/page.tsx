@@ -21,11 +21,11 @@ import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
 import InfoItem from "@/components/common/InfoItem";
 
-import TicketPriorityBadge from "@/components/dashboard/support/TicketPriorityBadge";
-import TicketStatusBadge from "@/components/dashboard/support/TicketStatusBadge";
-import TicketReplyForm from "@/components/dashboard/support/TicketReplyForm";
+import TicketPriorityBadge from "@/features/support/components/TicketPriorityBadge";
+import TicketStatusBadge from "@/features/support/components/TicketStatusBadge";
+import TicketReplyForm from "@/features/support/components/TicketReplyForm";
 
-import { tickets } from "@/features/admin/support/data/tickets";
+import { tickets } from "@/features/support/data/tickets";
 
 interface TicketDetailsPageProps {
     params: Promise<{

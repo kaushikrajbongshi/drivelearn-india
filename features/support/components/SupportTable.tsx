@@ -1,6 +1,6 @@
 "use client";
 
-import type { Ticket } from "@/features/admin/support/types/ticket";
+import type { Ticket } from "@/features/support/types/ticket";
 
 import SupportTableRow from "./SupportTableRow";
 import SupportMobileCard from "./SupportMobileCard";

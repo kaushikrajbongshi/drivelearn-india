@@ -16,7 +16,7 @@ import {
 import TicketPriorityBadge from "./TicketPriorityBadge";
 import TicketStatusBadge from "./TicketStatusBadge";
 
-import type { Ticket } from "@/features/admin/support/types/ticket";
+import type { Ticket } from "@/features/support/types/ticket";
 
 interface SupportMobileCardProps {
     ticket: Ticket;

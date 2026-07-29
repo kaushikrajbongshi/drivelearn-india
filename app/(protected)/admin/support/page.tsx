@@ -4,11 +4,11 @@ import { useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import SupportToolbar from "@/components/dashboard/support/SupportToolbar";
-import SupportTable from "@/components/dashboard/support/SupportTable";
+import SupportToolbar from "@/features/support/components/SupportToolbar";
+import SupportTable from "@/features/support/components/SupportTable";
 import DataTablePagination from "@/components/common/DataTablePagination";
 
-import { tickets } from "@/features/admin/support/data/tickets";
+import { tickets } from "@/features/support/data/tickets";
 
 export default function SupportPage() {
   const [search, setSearch] = useState("");

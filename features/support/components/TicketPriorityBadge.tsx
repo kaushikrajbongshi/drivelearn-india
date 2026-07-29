@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 
-import type { TicketPriority } from "@/features/admin/support/types/ticket";
+import type { TicketPriority } from "@/features/support/types/ticket";
 
 interface TicketPriorityBadgeProps {
     priority: TicketPriority;
