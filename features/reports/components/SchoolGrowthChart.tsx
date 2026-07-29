@@ -16,7 +16,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
-import type { SchoolGrowth } from "@/features/admin/reports/types/report";
+import type { SchoolGrowth } from "@/features/reports/types/report";
 
 interface SchoolGrowthChartProps {
     data: SchoolGrowth[];

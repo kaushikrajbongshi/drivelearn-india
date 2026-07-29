@@ -4,9 +4,9 @@ import { useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import SupportToolbar from "@/features/support/components/SupportToolbar";
-import SupportTable from "@/features/support/components/SupportTable";
 import DataTablePagination from "@/components/common/DataTablePagination";
+import SupportTable from "@/features/support/components/SupportTable";
+import SupportToolbar from "@/features/support/components/SupportToolbar";
 
 import { tickets } from "@/features/support/data/tickets";
 

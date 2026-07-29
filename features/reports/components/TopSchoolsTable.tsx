@@ -14,7 +14,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 
-import type { TopSchool } from "@/features/admin/reports/types/report";
+import type { TopSchool } from "@/features/reports/types/report";
 
 interface TopSchoolsTableProps {
     schools: TopSchool[];

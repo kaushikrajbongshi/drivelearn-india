@@ -12,7 +12,7 @@ import {
     CardContent,
 } from "@/components/ui/card";
 
-import type { DashboardStats as DashboardStatsType } from "@/features/admin/reports/types/report";
+import type { DashboardStats as DashboardStatsType } from "@/features/reports/types/report";
 
 interface DashboardStatsProps {
     stats: DashboardStatsType;

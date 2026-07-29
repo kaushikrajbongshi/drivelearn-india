@@ -15,7 +15,7 @@ import {
 
 import type {
     Activity as ReportActivity,
-} from "@/features/admin/reports/types/report";
+} from "@/features/reports/types/report";
 
 interface RecentActivitiesProps {
     activities: ReportActivity[];

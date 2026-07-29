@@ -16,7 +16,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
-import type { MonthlyRevenue } from "@/features/admin/reports/types/report";
+import type { MonthlyRevenue } from "@/features/reports/types/report";
 
 interface RevenueChartProps {
     data: MonthlyRevenue[];

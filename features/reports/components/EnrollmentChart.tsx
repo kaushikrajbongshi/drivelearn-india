@@ -16,7 +16,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
-import type { Enrollment } from "@/features/admin/reports/types/report";
+import type { Enrollment } from "@/features/reports/types/report";
 
 interface EnrollmentChartProps {
     data: Enrollment[];
