@@ -6,7 +6,7 @@ import {
     AvatarImage,
 } from "@/components/ui/avatar";
 
-import type { School } from "@/features/admin/schools/types/school";
+import type { School } from "@/features/schools/types/school";
 
 import SchoolActions from "./SchoolActions";
 import SchoolStatusBadge from "./SchoolStatusBadge";

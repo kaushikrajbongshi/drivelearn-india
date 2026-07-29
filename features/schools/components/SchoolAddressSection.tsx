@@ -4,7 +4,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 
-import type { School } from "@/features/admin/schools/types/school";
+import type { School } from "@/features/schools/types/school";
 
 interface SchoolAddressSectionProps {
   defaultValues?: Partial<School>;

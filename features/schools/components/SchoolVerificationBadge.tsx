@@ -8,7 +8,7 @@ import {
     type DashboardIcon,
 } from "@/features/dashboard/config/dashboard-icons";
 
-import type { SchoolVerificationStatus } from "@/features/admin/schools/types/school";
+import type { SchoolVerificationStatus } from "@/features/schools/types/school";
 
 interface SchoolVerificationBadgeProps {
     verification: SchoolVerificationStatus;

@@ -9,7 +9,7 @@ import SchoolAddressSection from "./SchoolAddressSection";
 import SchoolConfiguration from "./SchoolConfiguration";
 import SchoolLogoUpload from "./SchoolLogoUpload";
 
-import type { School } from "@/features/admin/schools/types/school";
+import type { School } from "@/features/schools/types/school";
 
 interface EditSchoolFormProps {
   school: School;

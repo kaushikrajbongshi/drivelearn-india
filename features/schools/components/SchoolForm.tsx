@@ -10,7 +10,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-import type { School } from "@/features/admin/schools/types/school";
+import type { School } from "@/features/schools/types/school";
 
 interface SchoolFormProps {
     defaultValues?: Partial<School>;

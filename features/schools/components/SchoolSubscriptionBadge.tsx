@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-import type { SubscriptionPlan } from "@/features/admin/schools/types/school";
+import type { SubscriptionPlan } from "@/features/schools/types/school";
 
 interface SchoolSubscriptionBadgeProps {
   subscription: SubscriptionPlan;

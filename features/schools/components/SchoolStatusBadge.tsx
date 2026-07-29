@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-import type { SchoolStatus } from "@/features/admin/schools/types/school";
+import type { SchoolStatus } from "@/features/schools/types/school";
 
 interface SchoolStatusBadgeProps {
     status: SchoolStatus;

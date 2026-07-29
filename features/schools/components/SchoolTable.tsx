@@ -8,7 +8,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 
-import type { School } from "@/features/admin/schools/types/school";
+import type { School } from "@/features/schools/types/school";
 
 import SchoolMobileCard from "./SchoolMobileCard";
 import SchoolTableRow from "./SchoolTableRow";

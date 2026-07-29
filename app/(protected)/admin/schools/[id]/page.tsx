@@ -19,11 +19,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import SchoolStatusBadge from "@/components/dashboard/schools/SchoolStatusBadge";
-import SchoolSubscriptionBadge from "@/components/dashboard/schools/SchoolSubscriptionBadge";
-import SchoolVerificationBadge from "@/components/dashboard/schools/SchoolVerificationBadge";
-
-import { schools } from "@/features/admin/schools/data/schools";
+import SchoolStatusBadge from "@/features/schools/components/SchoolStatusBadge";
+import SchoolSubscriptionBadge from "@/features/schools/components/SchoolSubscriptionBadge";
+import SchoolVerificationBadge from "@/features/schools/components/SchoolVerificationBadge";
+import { schools } from "@/features/schools/data/schools";
 
 interface SchoolDetailsPageProps {
     params: Promise<{
