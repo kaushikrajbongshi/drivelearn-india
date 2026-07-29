@@ -11,7 +11,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-import type { Instructor } from "@/features/admin/instructors/types/instructor";
+import type { Instructor } from "@/features/instructors/types/instructor";
 
 interface InstructorProfessionalSectionProps {
     defaultValues?: Partial<Instructor>;

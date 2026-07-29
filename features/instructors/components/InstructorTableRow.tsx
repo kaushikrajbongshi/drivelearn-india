@@ -16,7 +16,7 @@ import {
 import InstructorStatusBadge from "./InstructorStatusBadge";
 import InstructorActions from "./InstructorActions";
 
-import type { Instructor } from "@/features/admin/instructors/types/instructor";
+import type { Instructor } from "@/features/instructors/types/instructor";
 
 interface InstructorTableRowProps {
     instructor: Instructor;

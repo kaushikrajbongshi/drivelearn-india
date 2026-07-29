@@ -11,9 +11,8 @@ import {
 } from "@/components/ui/card";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import EditInstructorForm from "@/components/dashboard/instructors/EditInstructorForm";
-
-import { instructors } from "@/features/admin/instructors/data/instructors";
+import EditInstructorForm from "@/features/instructors/components/EditInstructorForm";
+import { instructors } from "@/features/instructors/data/instructors";
 
 interface EditInstructorPageProps {
     params: Promise<{

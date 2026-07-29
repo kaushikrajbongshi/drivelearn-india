@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
-import type { Instructor } from "@/features/admin/instructors/types/instructor";
+import type { Instructor } from "@/features/instructors/types/instructor";
 
 interface InstructorAddressSectionProps {
     defaultValues?: Partial<Instructor>;

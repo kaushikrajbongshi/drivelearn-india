@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 
-import type { InstructorStatus } from "@/features/admin/instructors/types/instructor";
+import type { InstructorStatus } from "@/features/instructors/types/instructor";
 
 interface InstructorStatusBadgeProps {
     status: InstructorStatus;

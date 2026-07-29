@@ -4,11 +4,11 @@ import { useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import InstructorTable from "@/components/dashboard/instructors/InstructorTable";
-import InstructorToolbar from "@/components/dashboard/instructors/InstructorToolbar";
-import InstructorPagination from "@/components/dashboard/instructors/InstructorPagination";
+import InstructorPagination from "@/features/instructors/components/InstructorPagination";
+import InstructorTable from "@/features/instructors/components/InstructorTable";
+import InstructorToolbar from "@/features/instructors/components/InstructorToolbar";
 
-import { instructors } from "@/features/admin/instructors/data/instructors";
+import { instructors } from "@/features/instructors/data/instructors";
 
 export default function AdminInstructorsPage() {
     const [search, setSearch] = useState("");

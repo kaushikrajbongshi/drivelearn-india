@@ -1,6 +1,6 @@
 "use client";
 
-import type { Instructor } from "@/features/admin/instructors/types/instructor";
+import type { Instructor } from "@/features/instructors/types/instructor";
 
 import InstructorTableRow from "./InstructorTableRow";
 import InstructorMobileCard from "./InstructorMobileCard";

@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 import InstructorStatusBadge from "./InstructorStatusBadge";
-import type { Instructor } from "@/features/admin/instructors/types/instructor";
+import type { Instructor } from "@/features/instructors/types/instructor";
 
 interface InstructorMobileCardProps {
     instructor: Instructor;
