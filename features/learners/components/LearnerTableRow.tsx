@@ -16,7 +16,7 @@ import {
 import LearnerStatusBadge from "./LearnerStatusBadge";
 import LearnerActions from "./LearnerActions";
 
-import type { Learner } from "@/features/admin/learners/types/learner";
+import type { Learner } from "@/features/learners/types/learner";
 
 interface LearnerTableRowProps {
     learner: Learner;

@@ -14,7 +14,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import LearnerStatusBadge from "./LearnerStatusBadge";
 
-import type { Learner } from "@/features/admin/learners/types/learner";
+import type { Learner } from "@/features/learners/types/learner";
 
 interface LearnerMobileCardProps {
     learner: Learner;

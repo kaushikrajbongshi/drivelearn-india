@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
-import type { Learner } from "@/features/admin/learners/types/learner";
+import type { Learner } from "@/features/learners/types/learner";
 
 interface LearnerAddressSectionProps {
     defaultValues?: Partial<Learner>;

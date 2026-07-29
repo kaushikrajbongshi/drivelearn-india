@@ -11,7 +11,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-import type { Learner } from "@/features/admin/learners/types/learner";
+import type { Learner } from "@/features/learners/types/learner";
 
 interface LearnerCourseSectionProps {
     defaultValues?: Partial<Learner>;

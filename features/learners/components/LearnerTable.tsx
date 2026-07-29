@@ -1,6 +1,6 @@
 "use client";
 
-import type { Learner } from "@/features/admin/learners/types/learner";
+import type { Learner } from "@/features/learners/types/learner";
 
 import LearnerTableRow from "./LearnerTableRow";
 import LearnerMobileCard from "./LearnerMobileCard";

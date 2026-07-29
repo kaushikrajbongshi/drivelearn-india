@@ -8,7 +8,7 @@ import LearnerForm from "./LearnerForm";
 import LearnerAddressSection from "./LearnerAddressSection";
 import LearnerCourseSection from "./LearnerCourseSection";
 import LearnerPhotoUpload from "./LearnerPhotoUpload";
-import type { Learner } from "@/features/admin/learners/types/learner";
+import type { Learner } from "@/features/learners/types/learner";
 
 interface EditLearnerFormProps {
     learner: Learner;

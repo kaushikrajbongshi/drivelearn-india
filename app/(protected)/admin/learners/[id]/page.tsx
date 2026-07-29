@@ -25,9 +25,9 @@ import {
 } from "@/components/ui/card";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import LearnerStatusBadge from "@/components/dashboard/learners/LearnerStatusBadge";
+import LearnerStatusBadge from "@/features/learners/components/LearnerStatusBadge";
 
-import { learners } from "@/features/admin/learners/data/learners";
+import { learners } from "@/features/learners/data/learners";
 
 interface LearnerDetailsPageProps {
     params: Promise<{
