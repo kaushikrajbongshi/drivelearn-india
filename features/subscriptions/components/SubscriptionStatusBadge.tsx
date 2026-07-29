@@ -1,40 +1,40 @@
 import { Badge } from "@/components/ui/badge";
 
-import type { PaymentStatus } from "@/features/admin/subscriptions/types/subscription";
+import type { SubscriptionStatus } from "@/features/subscriptions/types/subscription";
 
-interface PaymentStatusBadgeProps {
-    status: PaymentStatus;
+interface SubscriptionStatusBadgeProps {
+    status: SubscriptionStatus;
 }
 
 const statusMap: Record<
-    PaymentStatus,
+    SubscriptionStatus,
     {
         label: string;
         className: string;
     }
 > = {
-    paid: {
-        label: "Paid",
+    active: {
+        label: "Active",
         className:
             "border-green-200 bg-green-50 text-green-700 dark:border-green-900 dark:bg-green-950 dark:text-green-300",
     },
 
-    pending: {
-        label: "Pending",
+    expired: {
+        label: "Expired",
         className:
             "border-yellow-200 bg-yellow-50 text-yellow-700 dark:border-yellow-900 dark:bg-yellow-950 dark:text-yellow-300",
     },
 
-    failed: {
-        label: "Failed",
+    cancelled: {
+        label: "Cancelled",
         className:
             "border-red-200 bg-red-50 text-red-700 dark:border-red-900 dark:bg-red-950 dark:text-red-300",
     },
 };
 
-export default function PaymentStatusBadge({
+export default function SubscriptionStatusBadge({
     status,
-}: PaymentStatusBadgeProps) {
+}: SubscriptionStatusBadgeProps) {
     const config = statusMap[status];
 
     return (

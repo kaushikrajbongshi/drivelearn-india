@@ -19,7 +19,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import type { Subscription } from "@/features/admin/subscriptions/types/subscription";
+import type { Subscription } from "@/features/subscriptions/types/subscription";
 
 interface SubscriptionActionsProps {
     subscription: Subscription;

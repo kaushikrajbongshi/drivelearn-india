@@ -11,9 +11,9 @@ import {
 } from "@/components/ui/card";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import EditSubscriptionForm from "@/components/dashboard/subscriptions/EditSubscriptionForm";
+import EditSubscriptionForm from "@/features/subscriptions/components/EditSubscriptionForm";
 
-import { subscriptions } from "@/features/admin/subscriptions/data/subscriptions";
+import { subscriptions } from "@/features/subscriptions/data/subscriptions";
 
 interface EditSubscriptionPageProps {
     params: Promise<{

@@ -11,7 +11,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-import type { Subscription } from "@/features/admin/subscriptions/types/subscription";
+import type { Subscription } from "@/features/subscriptions/types/subscription";
 
 interface SubscriptionFormProps {
     defaultValues?: Partial<Subscription>;
