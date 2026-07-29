@@ -3,11 +3,10 @@
 import { useEffect, useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import UserPagination from "@/components/dashboard/users/UserPagination";
-import UserTable from "@/components/dashboard/users/UserTable";
-import UserTableToolbar from "@/components/dashboard/users/UserTableToolbar";
-
-import { users } from "@/features/admin/users/data/users";
+import UserPagination from "@/features/users/components/UserPagination";
+import UserTable from "@/features/users/components/UserTable";
+import UserTableToolbar from "@/features/users/components/UserTableToolbar";
+import { users } from "@/features/users/data/users";
 
 const ITEMS_PER_PAGE = 10;
 

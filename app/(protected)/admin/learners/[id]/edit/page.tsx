@@ -11,9 +11,9 @@ import {
 } from "@/components/ui/card";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import EditLearnerForm from "@/components/dashboard/learners/EditLearnerForm";
+import EditLearnerForm from "@/features/learners/components/EditLearnerForm";
 
-import { learners } from "@/features/admin/learners/data/learners";
+import { learners } from "@/features/learners/data/learners";
 
 interface EditLearnerPageProps {
     params: Promise<{

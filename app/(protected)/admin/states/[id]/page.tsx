@@ -20,9 +20,9 @@ import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
 import InfoItem from "@/components/common/InfoItem";
 
-import StateStatusBadge from "@/components/dashboard/states/StateStatusBadge";
+import StateStatusBadge from "@/features/states/components/StateStatusBadge";
 
-import { states } from "@/features/admin/states/data/states";
+import { states } from "@/features/states/data/states";
 
 interface StateDetailsPageProps {
     params: Promise<{

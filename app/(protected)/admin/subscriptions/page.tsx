@@ -4,11 +4,11 @@ import { useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import SubscriptionToolbar from "@/components/dashboard/subscriptions/SubscriptionToolbar";
-import SubscriptionTable from "@/components/dashboard/subscriptions/SubscriptionTable";
-import SubscriptionPagination from "@/components/dashboard/subscriptions/SubscriptionPagination";
+import SubscriptionToolbar from "@/features/subscriptions/components/SubscriptionToolbar";
+import SubscriptionTable from "@/features/subscriptions/components/SubscriptionTable";
+import SubscriptionPagination from "@/features/subscriptions/components/SubscriptionPagination";
 
-import { subscriptions } from "@/features/admin/subscriptions/data/subscriptions";
+import { subscriptions } from "@/features/subscriptions/data/subscriptions";
 
 export default function AdminSubscriptionsPage() {
   const [search, setSearch] = useState("");

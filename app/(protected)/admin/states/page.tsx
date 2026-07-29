@@ -4,12 +4,12 @@ import { useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import StateToolbar from "@/components/dashboard/states/StateToolbar";
-import StateTable from "@/components/dashboard/states/StateTable";
+import StateToolbar from "@/features/states/components/StateToolbar";
+import StateTable from "@/features/states/components/StateTable";
 
 import DataTablePagination from "@/components/common/DataTablePagination";
 
-import { states } from "@/features/admin/states/data/states";
+import { states } from "@/features/states/data/states";
 
 export default function StatesPage() {
   const [search, setSearch] = useState("");

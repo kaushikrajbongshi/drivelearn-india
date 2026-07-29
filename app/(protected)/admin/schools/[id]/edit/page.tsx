@@ -1,6 +1,6 @@
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,12 +11,8 @@ import {
 } from "@/components/ui/card";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
-import SchoolForm from "@/components/dashboard/schools/SchoolForm";
-import SchoolAddressSection from "@/components/dashboard/schools/SchoolAddressSection";
-import SchoolConfiguration from "@/components/dashboard/schools/SchoolConfiguration";
-import { schools } from "@/features/admin/schools/data/schools";
-import SchoolLogoUpload from "@/components/dashboard/schools/SchoolLogoUpload";
-import EditSchoolForm from "@/components/dashboard/schools/EditSchoolForm";
+import EditSchoolForm from "@/features/schools/components/EditSchoolForm";
+import { schools } from "@/features/schools/data/schools";
 
 interface EditSchoolPageProps {
     params: Promise<{

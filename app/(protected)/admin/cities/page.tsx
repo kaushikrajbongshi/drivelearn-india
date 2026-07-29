@@ -4,12 +4,12 @@ import { useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import CityToolbar from "@/components/dashboard/cities/CityToolbar";
-import CityTable from "@/components/dashboard/cities/CityTable";
+import CityToolbar from "@/features/cities/components/CityToolbar";
+import CityTable from "@/features/cities/components/CityTable";
 
 import DataTablePagination from "@/components/common/DataTablePagination";
 
-import { cities } from "@/features/admin/cities/data/cities";
+import { cities } from "@/features/cities/data/cities";
 
 export default function CitiesPage() {
   const [search, setSearch] = useState("");

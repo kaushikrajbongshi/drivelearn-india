@@ -15,6 +15,9 @@ import {
   Bell,
   Car,
   UserRoundCog,
+  Building2,
+  BookOpen,
+  Star,
 } from "lucide-react";
 
 export const sidebarIcons = {
@@ -34,4 +37,7 @@ export const sidebarIcons = {
   bell: Bell,
   car: Car,
   "user-round-cog": UserRoundCog,
+  school: Building2,
+  "book-open": BookOpen,
+  star: Star,
 } as const;

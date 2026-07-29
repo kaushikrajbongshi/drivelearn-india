@@ -1,12 +1,12 @@
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import ReportsToolbar from "@/components/dashboard/reports/ReportsToolbar";
-import DashboardStats from "@/components/dashboard/reports/DashboardStats";
-import RevenueChart from "@/components/dashboard/reports/RevenueChart";
-import EnrollmentChart from "@/components/dashboard/reports/EnrollmentChart";
-import SchoolGrowthChart from "@/components/dashboard/reports/SchoolGrowthChart";
-import TopSchoolsTable from "@/components/dashboard/reports/TopSchoolsTable";
-import RecentActivities from "@/components/dashboard/reports/RecentActivities";
+import ReportsToolbar from "@/features/reports/components/ReportsToolbar";
+import DashboardStats from "@/features/reports/components/DashboardStats";
+import RevenueChart from "@/features/reports/components/RevenueChart";
+import EnrollmentChart from "@/features/reports/components/EnrollmentChart";
+import SchoolGrowthChart from "@/features/reports/components/SchoolGrowthChart";
+import TopSchoolsTable from "@/features/reports/components/TopSchoolsTable";
+import RecentActivities from "@/features/reports/components/RecentActivities";
 
 import {
   dashboardStats,
@@ -15,7 +15,7 @@ import {
   revenueData,
   schoolGrowthData,
   topSchools,
-} from "@/features/admin/reports/data/reports";
+} from "@/features/reports/data/reports";
 
 export default function ReportsPage() {
   return (

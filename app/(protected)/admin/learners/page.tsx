@@ -4,10 +4,10 @@ import { useMemo, useState } from "react";
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import LearnerToolbar from "@/components/dashboard/learners/LearnerToolbar";
-import LearnerTable from "@/components/dashboard/learners/LearnerTable";
+import LearnerToolbar from "@/features/learners/components/LearnerToolbar";
+import LearnerTable from "@/features/learners/components/LearnerTable";
 import DataTablePagination from "@/components/common/DataTablePagination";
-import { learners } from "@/features/admin/learners/data/learners";
+import { learners } from "@/features/learners/data/learners";
 
 export default function AdminLearnersPage() {
     const [search, setSearch] = useState("");

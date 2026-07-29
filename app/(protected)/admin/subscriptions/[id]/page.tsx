@@ -23,10 +23,10 @@ import {
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import SubscriptionStatusBadge from "@/components/dashboard/subscriptions/SubscriptionStatusBadge";
-import PaymentStatusBadge from "@/components/dashboard/subscriptions/PaymentStatusBadge";
+import SubscriptionStatusBadge from "@/features/subscriptions/components/SubscriptionStatusBadge";
+import PaymentStatusBadge from "@/features/subscriptions/components/PaymentStatusBadge";
 
-import { subscriptions } from "@/features/admin/subscriptions/data/subscriptions";
+import { subscriptions } from "@/features/subscriptions/data/subscriptions";
 
 interface SubscriptionDetailsPageProps {
     params: Promise<{

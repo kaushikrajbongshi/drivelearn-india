@@ -13,9 +13,9 @@ import {
 
 import DashboardPageHeader from "@/components/dashboard/DashboardPageHeader";
 
-import EditCityForm from "@/components/dashboard/cities/EditCityForm";
+import EditCityForm from "@/features/cities/components/EditCityForm";
 
-import { cities } from "@/features/admin/cities/data/cities";
+import { cities } from "@/features/cities/data/cities";
 
 interface EditCityPageProps {
     params: Promise<{
