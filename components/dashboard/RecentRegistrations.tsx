@@ -15,52 +15,27 @@ import {
     type DashboardIcon,
 } from "@/features/dashboard/config/dashboard-icons";
 
-interface Registration {
+export interface Registration {
     id: number;
     name: string;
     email: string;
     role: "Learner" | "School";
-    status: "Pending" | "Approved";
+    status: "Pending" | "Approved" | "Reject";
     avatar?: string;
 }
 
-const registrations: Registration[] = [
-    {
-        id: 1,
-        name: "Rahul Sharma",
-        email: "rahul@example.com",
-        role: "Learner",
-        status: "Approved",
-    },
-    {
-        id: 2,
-        name: "DriveSafe Academy",
-        email: "contact@drivesafe.com",
-        role: "School",
-        status: "Pending",
-    },
-    {
-        id: 3,
-        name: "Priya Das",
-        email: "priya@example.com",
-        role: "Learner",
-        status: "Approved",
-    },
-    {
-        id: 4,
-        name: "Royal Driving School",
-        email: "info@royaldrive.com",
-        role: "School",
-        status: "Pending",
-    },
-];
+interface RecentRegistrationsProps {
+    registrations: Registration[];
+}
 
 const roleIcons: Record<Registration["role"], DashboardIcon> = {
     Learner: "learners",
     School: "schools",
 };
 
-export default function RecentRegistrations() {
+export default function RecentRegistrations({
+    registrations,
+}: RecentRegistrationsProps) {
     const MoreIcon = dashboardIcons.more;
 
     return (
@@ -78,8 +53,10 @@ export default function RecentRegistrations() {
                     const RoleIcon = dashboardIcons[roleIcons[user.role]];
 
                     return (
-                        <div key={user.id} className="flex flex-col gap-4 rounded-xl border p-4 sm:flex-row sm:items-center sm:justify-between hover:bg-muted/50 transition-colors">
-                            {/* Left */}
+                        <div
+                            key={user.id}
+                            className="flex flex-col gap-4 rounded-xl border p-4 sm:flex-row sm:items-center sm:justify-between hover:bg-muted/50 transition-colors"
+                        >
                             <div className="flex items-center gap-3 min-w-0">
                                 <Avatar className="size-10 shrink-0">
                                     <AvatarImage src={user.avatar} alt={user.name} />
@@ -93,9 +70,7 @@ export default function RecentRegistrations() {
                                 </Avatar>
 
                                 <div className="min-w-0">
-                                    <p className="truncate font-medium">
-                                        {user.name}
-                                    </p>
+                                    <p className="truncate font-medium">{user.name}</p>
 
                                     <p className="truncate text-sm text-muted-foreground">
                                         {user.email}
@@ -103,7 +78,6 @@ export default function RecentRegistrations() {
                                 </div>
                             </div>
 
-                            {/* Right */}
                             <div className="flex flex-wrap items-center gap-2 sm:justify-end">
                                 <Badge variant="outline" className="gap-1">
                                     <RoleIcon className="size-3.5" />
@@ -114,7 +88,9 @@ export default function RecentRegistrations() {
                                     variant={
                                         user.status === "Approved"
                                             ? "default"
-                                            : "secondary"
+                                            : user.status === "Reject"
+                                                ? "destructive"
+                                                : "secondary"
                                     }
                                 >
                                     {user.status}

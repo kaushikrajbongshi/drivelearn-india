@@ -14,12 +14,16 @@ type ActivityType =
   | "subscription"
   | "verification";
 
-interface ActivityItem {
-  id: number;
+export interface ActivityItem {
+  id: string;
   title: string;
   description: string;
   time: string;
-  type: ActivityType;
+  type?: ActivityType;
+}
+
+interface RecentActivityProps {
+  activities: ActivityItem[];
 }
 
 const activityConfig: Record<
@@ -42,38 +46,9 @@ const activityConfig: Record<
   },
 };
 
-const activities: ActivityItem[] = [
-  {
-    id: 1,
-    title: "New learner registered",
-    description: "Rahul Sharma created a new account.",
-    time: "2 min ago",
-    type: "user",
-  },
-  {
-    id: 2,
-    title: "School verification completed",
-    description: "DriveSafe Academy has been approved.",
-    time: "18 min ago",
-    type: "verification",
-  },
-  {
-    id: 3,
-    title: "Premium subscription purchased",
-    description: "Safe Wheels Driving School upgraded.",
-    time: "1 hour ago",
-    type: "subscription",
-  },
-  {
-    id: 4,
-    title: "New driving school joined",
-    description: "Royal Motor Training registered.",
-    time: "3 hours ago",
-    type: "school",
-  },
-];
-
-export default function RecentActivity() {
+export default function RecentActivity({
+  activities,
+}: RecentActivityProps) {
   return (
     <Card className="h-full">
       <CardHeader className="flex flex-row items-center justify-between">
@@ -92,7 +67,9 @@ export default function RecentActivity() {
         <div className="space-y-5">
           {activities.map((activity) => {
             const Icon =
-              dashboardIcons[activityConfig[activity.type].icon];
+              dashboardIcons[
+                activityConfig[activity.type ?? "user"].icon
+              ];
 
             return (
               <div

@@ -26,6 +26,7 @@ import {
   UserRoundCog,
   UserPlus,
   Users,
+  BadgeCheck
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -68,6 +69,7 @@ export const dashboardIcons = {
   subscription: CreditCard,
   review: Star,
   map: Map,
+  certificate: BadgeCheck,
 } as const;
 
 export type DashboardIcon = keyof typeof dashboardIcons;

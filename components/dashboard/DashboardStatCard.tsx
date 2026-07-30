@@ -10,14 +10,24 @@ import {
   type DashboardIcon,
 } from "@/features/dashboard/config/dashboard-icons";
 
-interface DashboardStatCardProps {
+// interface DashboardStatCardProps {
+//   title: string;
+//   value: string | number;
+//   description?: string;
+//   icon: DashboardIcon;
+//   trend?: {
+//     value: string;
+//     positive?: boolean;
+//   };
+// }
+export interface DashboardStatCardProps {
   title: string;
-  value: string | number;
-  description?: string;
+  value: string;
+  description: string;
   icon: DashboardIcon;
   trend?: {
     value: string;
-    positive?: boolean;
+    positive: boolean;
   };
 }
 

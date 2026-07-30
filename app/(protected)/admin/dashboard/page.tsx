@@ -4,6 +4,9 @@ import DashboardStatCard from "@/components/dashboard/DashboardStatCard";
 import QuickActions from "@/components/dashboard/QuickActions";
 import RecentActivity from "@/components/dashboard/RecentActivity";
 import RecentRegistrations from "@/components/dashboard/RecentRegistrations";
+import { adminQuickActions } from "@/features/dashboard/data/quick-actions";
+import { adminRecentActivities } from "@/features/dashboard/data/recent-activity";
+import { adminRecentRegistrations } from "@/features/dashboard/data/recent-registrations";
 
 export default function AdminDashboardPage() {
   return (
@@ -70,13 +73,16 @@ export default function AdminDashboardPage() {
           />
         </div>
 
-        <QuickActions />
+        <QuickActions
+          actions={adminQuickActions}
+          buttonText="New Action"
+        />
       </section>
 
       {/* Bottom */}
       <section className="grid gap-6 xl:grid-cols-2">
-        <RecentRegistrations />
-        <RecentActivity />
+        <RecentActivity activities={adminRecentActivities} />
+        <RecentRegistrations registrations={adminRecentRegistrations} />
       </section>
     </div>
   );
