@@ -9,8 +9,8 @@ import DataTablePagination from "@/components/common/DataTablePagination";
 import LearnerTable from "@/features/owner/learners/components/LearnerTable";
 import LearnerToolbar from "@/features/owner/learners/components/LearnerToolbar";
 
-import { learners } from "@/features/owner/learners/data/learners";
 import LearnerStats from "@/features/owner/learners/components/LearnerStats";
+import { learners } from "@/features/owner/learners/data/learners";
 import { learnerStats } from "@/features/owner/learners/data/stats";
 
 export default function OwnerLearnersPage() {

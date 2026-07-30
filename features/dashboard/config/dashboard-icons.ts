@@ -26,7 +26,8 @@ import {
   UserRoundCog,
   UserPlus,
   Users,
-  BadgeCheck
+  BadgeCheck,
+  Briefcase,
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -58,18 +59,27 @@ export const dashboardIcons = {
   user: User,
 
   // ===== Owner Portal =====
+
   school: Building2,
   branches: MapPinned,
+
   instructor: UserRoundCog,
+  instructors: UserRoundCog,
+
   course: BookOpen,
   booking: CalendarCheck,
   schedule: CalendarDays,
   attendance: ClipboardCheck,
   payment: CreditCard,
   subscription: CreditCard,
+
   review: Star,
+  star: Star,
+
   map: Map,
   certificate: BadgeCheck,
+
+  active: Briefcase,
 } as const;
 
 export type DashboardIcon = keyof typeof dashboardIcons;
