@@ -29,6 +29,7 @@ import {
   BadgeCheck,
   Briefcase,
   Wrench,
+  CircleX
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -76,7 +77,7 @@ export const dashboardIcons = {
   maintenance: Wrench,
   review: Star,
   star: Star,
-
+  cancel: CircleX,
   map: Map,
   certificate: BadgeCheck,
 
