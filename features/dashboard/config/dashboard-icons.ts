@@ -28,6 +28,7 @@ import {
   Users,
   BadgeCheck,
   Briefcase,
+  Wrench,
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -72,7 +73,7 @@ export const dashboardIcons = {
   attendance: ClipboardCheck,
   payment: CreditCard,
   subscription: CreditCard,
-
+  maintenance: Wrench,
   review: Star,
   star: Star,
 

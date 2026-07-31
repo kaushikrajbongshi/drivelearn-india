@@ -27,6 +27,11 @@ export const ownerNav: NavItem[] = [
     icon: "graduation-cap",
   },
   {
+    title: "Vehicle",
+    url: "/owner/vehicles",
+    icon: "car",
+  },
+  {
     title: "Courses",
     url: "/owner/courses",
     icon: "book-open",
