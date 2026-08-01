@@ -17,7 +17,6 @@ import {
   Map,
   MapPinned,
   MoreHorizontal,
-  BookOpen,
   Settings,
   ShieldBan,
   ShieldCheck,
@@ -30,9 +29,10 @@ import {
   Briefcase,
   Wrench,
   CircleX,
-    Wallet,
+  Wallet,
   IndianRupee,
   Clock3,
+  BookOpen,
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -87,6 +87,7 @@ export const dashboardIcons = {
   indianRupee: IndianRupee,
   clock3: Clock3,
   active: Briefcase,
+
 } as const;
 
 export type DashboardIcon = keyof typeof dashboardIcons;
