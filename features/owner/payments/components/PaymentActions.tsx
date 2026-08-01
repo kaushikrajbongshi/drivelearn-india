@@ -23,6 +23,7 @@ import {
 import DeleteConfirmationDialog from "@/components/common/DeleteConfirmationDialog";
 
 import type { Payment } from "../types/payment";
+import { showToast } from "@/lib/toast";
 
 interface PaymentActionsProps {
     payment: Payment;
@@ -97,9 +98,8 @@ export default function PaymentActions({
                 title="Delete Payment"
                 description="Are you sure you want to delete this payment? This action cannot be undone."
                 onConfirm={() => {
-                    console.log(
-                        "Delete Payment",
-                        payment.id
+                    showToast.success(
+                        "Course deleted successfully."
                     );
                 }}
             />

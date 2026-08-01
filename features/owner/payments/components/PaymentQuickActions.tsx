@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
 
 import {
     Pencil,
@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 
 import DeleteConfirmationDialog from "@/components/common/DeleteConfirmationDialog";
 
+import { showToast } from "@/lib/toast";
 import type { Payment } from "../types/payment";
 
 interface PaymentQuickActionsProps {
@@ -29,6 +30,10 @@ export default function PaymentQuickActions({
             "Delete Payment:",
             payment.id
         );
+        showToast.success(
+            `Course deleted successfully`
+        );
+
     };
 
     return (
@@ -50,14 +55,16 @@ export default function PaymentQuickActions({
                 <Button
                     variant="destructive"
                     className="w-full justify-start"
-                    onClick={() =>
+                    onClick={() => {
                         setOpenDeleteDialog(true)
-                    }
+                    }}
+
                 >
                     <Trash2 className="mr-2 size-4" />
                     Delete Payment
+
                 </Button>
-            </div>
+            </div >
 
             <DeleteConfirmationDialog
                 open={openDeleteDialog}
@@ -65,7 +72,9 @@ export default function PaymentQuickActions({
                 title="Delete Payment"
                 description="Are you sure you want to delete this payment? This action cannot be undone."
                 onConfirm={handleDelete}
+
             />
         </>
     );
 }
+
