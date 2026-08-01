@@ -29,7 +29,10 @@ import {
   BadgeCheck,
   Briefcase,
   Wrench,
-  CircleX
+  CircleX,
+    Wallet,
+  IndianRupee,
+  Clock3,
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -80,7 +83,9 @@ export const dashboardIcons = {
   cancel: CircleX,
   map: Map,
   certificate: BadgeCheck,
-
+  wallet: Wallet,
+  indianRupee: IndianRupee,
+  clock3: Clock3,
   active: Briefcase,
 } as const;
 
