@@ -11,6 +11,8 @@ import CourseToolbar from "@/features/owner/courses/components/CourseToolbar";
 
 import { courseStats } from "@/features/owner/courses/data/stats";
 import { courses } from "@/features/owner/courses/data/courses";
+import EmptyState from "@/components/common/EmptyState";
+import ErrorState from "@/components/common/ErrorState";
 
 export default function OwnerCoursesPage() {
   const [search, setSearch] = useState("");
@@ -79,15 +81,29 @@ export default function OwnerCoursesPage() {
         onStatusChange={setStatus}
       />
 
-      <CourseTable
-        courses={paginatedCourses}
-      />
+      {courses.length === 0 ? (
+        <ErrorState
+          title="Something went wrong"
+          description="ErrorState Shown"
+        />
+      ) : filteredCourses.length === 0 ? (
+        <ErrorState
+          title="No Matching Courses"
+          description="Try changing your search or filter."
+        />
+      ) : (
+        <>
+          <CourseTable
+            courses={paginatedCourses}
+          />
 
-      <DataTablePagination
-        currentPage={page}
-        totalPages={totalPages}
-        onPageChange={setPage}
-      />
+          <DataTablePagination
+            currentPage={page}
+            totalPages={totalPages}
+            onPageChange={setPage}
+          />
+        </>
+      )}
     </div>
   );
 }
