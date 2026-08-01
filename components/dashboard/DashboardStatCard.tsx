@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import {
   dashboardIcons,
   type DashboardIcon,
-} from "@/features/dashboard/config/dashboard-icons";
+} from "@/config/dashboard-icons";
 
 // interface DashboardStatCardProps {
 //   title: string;

@@ -1,6 +1,6 @@
 import {
   DashboardIcon,
-} from "@/features/dashboard/config/dashboard-icons";
+} from "@/config/dashboard-icons";
 
 export type LearnerStatus = "Active" | "Inactive" | "Completed";
 

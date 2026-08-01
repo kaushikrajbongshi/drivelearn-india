@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import {
   dashboardIcons,
   type DashboardIcon,
-} from "@/features/dashboard/config/dashboard-icons";
+} from "@/config/dashboard-icons";
 
 import type { UserRole } from "@/features/users/types/user";
 

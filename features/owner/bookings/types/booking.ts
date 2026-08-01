@@ -1,4 +1,4 @@
-import { DashboardIcon } from "@/features/dashboard/config/dashboard-icons";
+import { DashboardIcon } from "@/config/dashboard-icons";
 
 export type BookingStatus = "Scheduled" | "Ongoing" | "Completed" | "Cancelled";
 

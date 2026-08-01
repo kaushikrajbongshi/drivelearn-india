@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import {
     dashboardIcons,
     type DashboardIcon,
-} from "@/features/dashboard/config/dashboard-icons";
+} from "@/config/dashboard-icons";
 
 import type { SchoolVerificationStatus } from "@/features/schools/types/school";
 

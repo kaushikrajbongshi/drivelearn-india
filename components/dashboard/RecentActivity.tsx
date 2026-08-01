@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import {
   dashboardIcons,
   type DashboardIcon,
-} from "@/features/dashboard/config/dashboard-icons";
+} from "@/config/dashboard-icons";
 
 type ActivityType =
   | "user"

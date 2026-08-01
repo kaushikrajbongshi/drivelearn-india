@@ -51,7 +51,7 @@ export default function BookingActions({
                     }
                 >
                     <Eye className="mr-2 size-4" />
-                    View Booking
+                    View
                 </DropdownMenuItem>
 
                 <DropdownMenuItem
@@ -63,7 +63,7 @@ export default function BookingActions({
                     }
                 >
                     <Pencil className="mr-2 size-4" />
-                    Edit Booking
+                    Edit
                 </DropdownMenuItem>
 
                 <DropdownMenuSeparator />
@@ -78,7 +78,7 @@ export default function BookingActions({
 
                 <DropdownMenuItem className="text-destructive focus:text-destructive">
                     <Trash2 className="mr-2 size-4" />
-                    Delete Booking
+                    Delete
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

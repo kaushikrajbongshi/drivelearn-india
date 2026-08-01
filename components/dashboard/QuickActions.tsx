@@ -13,7 +13,7 @@ import {
 import {
   dashboardIcons,
   type DashboardIcon,
-} from "@/features/dashboard/config/dashboard-icons";
+} from "@/config/dashboard-icons";
 
 export interface ActionItem {
   title: string;
