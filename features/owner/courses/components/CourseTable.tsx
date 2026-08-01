@@ -12,6 +12,7 @@ import CourseMobileCard from "./CourseMobileCard";
 import CourseTableRow from "./CourseTableRow";
 
 import type { Course } from "../types/course";
+import { BookOpen } from "lucide-react";
 
 interface CourseTableProps {
     courses: Course[];
@@ -23,8 +24,11 @@ export default function CourseTable({
     if (!courses.length) {
         return (
             <EmptyState
-                title="No courses found"
-                description="Try adjusting your search or filters."
+                icon={BookOpen}
+                title="No Courses Found"
+                description="Create your first course to get started."
+                actionLabel="Add Course"
+            // onAction={() => setOpen(true)}
             />
         );
     }
