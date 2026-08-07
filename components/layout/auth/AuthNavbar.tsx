@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 import Logo from "../navbar/Logo";
 import ThemeToggle from "@/components/theme-toggle";
 
@@ -12,7 +10,6 @@ export default function AuthNavbar() {
 
                 {/* Logo */}
                 <Logo />
-
                 {/* Theme Toggle */}
                 <ThemeToggle />
 
