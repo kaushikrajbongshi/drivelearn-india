@@ -104,3 +104,12 @@ export const verifyOtpSchema = z.object({
 });
 
 export type VerifyOtpFormData = z.infer<typeof verifyOtpSchema>;
+
+export const phoneSchema = z.object({
+  phone: z
+    .string()
+    .trim()
+    .regex(/^[6-9]\d{9}$/, "Enter a valid 10-digit mobile number"),
+});
+
+export type PhoneSchema = z.infer<typeof phoneSchema>;
