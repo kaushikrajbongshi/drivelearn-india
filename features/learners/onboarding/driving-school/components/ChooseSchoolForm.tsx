@@ -17,12 +17,14 @@ import { mockSchools } from "../data/mockSchools";
 import type { DrivingSchool, SchoolSortBy } from "../types/school";
 import SchoolCard from "./SchoolCard";
 import SchoolDetailsSheet from "./SchoolDetailsSheet";
+import { useRouter } from "next/navigation";
 
 interface ChooseSchoolFormProps {
     onContinue: (selectedSchoolId: string | null) => Promise<void> | void;
 }
 
 export default function ChooseSchoolForm({ onContinue }: ChooseSchoolFormProps) {
+    const router = useRouter()
     const [search, setSearch] = useState("");
     const [sortBy, setSortBy] = useState<SchoolSortBy>("distance");
     const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -50,6 +52,7 @@ export default function ChooseSchoolForm({ onContinue }: ChooseSchoolFormProps) 
         setIsSubmitting(true);
         try {
             await onContinue(null);
+            router.push("/learner/onboarding/welcome")
         } finally {
             setIsSubmitting(false);
         }
