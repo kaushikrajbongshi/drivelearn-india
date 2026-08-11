@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "features/learners/dashboard/components/VehicleCard.tsx tsx"  ],
   "exclude": ["node_modules"]
 }
