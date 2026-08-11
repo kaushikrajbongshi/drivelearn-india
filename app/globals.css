@@ -170,3 +170,19 @@
     animation: none;
   }
 }
+
+@keyframes route-dash-move {
+  to {
+    stroke-dashoffset: -34;
+  }
+}
+
+.route-dash {
+  animation: route-dash-move 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-dash {
+    animation: none;
+  }
+}
