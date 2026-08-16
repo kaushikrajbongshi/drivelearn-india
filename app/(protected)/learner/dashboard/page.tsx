@@ -1,8 +1,6 @@
 "use client";
 
-import { SidebarProvider } from "@/components/ui/sidebar";
 import DashboardHeader from "@/components/dashboard/learner/DashboardHeader";
-
 
 import WelcomeSection from "@/features/learners/dashboard/components/WelcomeSection";
 import CompleteSetupSection from "@/features/learners/dashboard/components/CompleteSetupSection";
@@ -16,31 +14,41 @@ import RateLessonSection from "@/features/learners/dashboard/components/RateLess
 import DashboardSupport from "@/features/learners/dashboard/components/DashboardSupport";
 
 export default function LearnerDashboardPage() {
-  const onboardingIncomplete = false;
+
+  const onboardingIncomplete = true;
 
   return (
-    <SidebarProvider>
-      <div className="flex min-h-screen w-full min-w-0 overflow-x-hidden bg-white dark:bg-neutral-950">
-        {/* Sidebar */}
+    <div className="min-h-screen w-full min-w-0 overflow-x-hidden bg-white dark:bg-neutral-950">
+      <DashboardHeader />
 
+      <main className="min-w-0 overflow-x-hidden">
+        <div className="mx-auto w-full max-w-7xl min-w-0 px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+          <div className="mx-auto w-full max-w-5xl min-w-0 space-y-8">
+            {/* Welcome */}
+            <WelcomeSection />
 
-        {/* Main area */}
-        <div className="flex min-w-0 flex-1 flex-col overflow-x-hidden">
-          <DashboardHeader />
-
-          <main className="min-w-0 flex-1 overflow-x-hidden">
-            <div className="mx-auto w-full max-w-7xl min-w-0 px-4 py-8 sm:px-6 lg:px-8">
-              <div className="mx-auto w-full max-w-5xl min-w-0 space-y-8">
-                {/* Welcome */}
-                <WelcomeSection />
-
-                {/* Optional onboarding */}
-                {onboardingIncomplete && <CompleteSetupSection />}
-
+            {onboardingIncomplete ? (
+              /*
+               * ============================================================
+               * INCOMPLETE ONBOARDING
+               * ============================================================
+               *
+               * Show ONLY the setup section.
+               */
+              <CompleteSetupSection />
+            ) : (
+              /*
+               * ============================================================
+               * COMPLETED ONBOARDING
+               * ============================================================
+               *
+               * Show the actual learner dashboard.
+               */
+              <>
                 {/* Next lesson */}
                 <NextLessonSection />
 
-                {/* License route */}
+                {/* Route to license */}
                 <LicenseRouteSection />
 
                 {/* Training progress */}
@@ -57,7 +65,7 @@ export default function LearnerDashboardPage() {
                   </div>
                 </div>
 
-                {/* Quick Actions + Recent Lesson */}
+                {/* Quick actions + Recent lesson */}
                 <div className="grid min-w-0 grid-cols-1 gap-8 lg:grid-cols-2">
                   <div className="min-w-0">
                     <QuickActionsSection />
@@ -70,11 +78,11 @@ export default function LearnerDashboardPage() {
 
                 {/* Support */}
                 <DashboardSupport />
-              </div>
-            </div>
-          </main>
+              </>
+            )}
+          </div>
         </div>
-      </div>
-    </SidebarProvider>
+      </main>
+    </div>
   );
 }
