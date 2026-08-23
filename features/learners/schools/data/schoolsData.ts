@@ -32,14 +32,7 @@ export const schoolsData: DrivingSchool[] = [
         duration: "15 hours",
         price: 3500,
       },
-      {
-        id: "course-2",
-        name: "Complete LMV Course",
-        description:
-          "Complete practical training from basic driving to test preparation.",
-        duration: "20 hours",
-        price: 5000,
-      },
+
     ],
 
     instructors: [
@@ -178,7 +171,7 @@ export const schoolsData: DrivingSchool[] = [
   },
 
   {
-    id: "school-3",
+    id: "4",
     name: "City Wheels Driving Institute",
     image: "/school/polish-driving-school-sign.webp",
     description:
@@ -210,6 +203,1570 @@ export const schoolsData: DrivingSchool[] = [
       },
       {
         id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+    ],
+
+    instructors: [
+      {
+        id: "instructor-4",
+        name: "Sanjay Sharma",
+        experience: 10,
+        rating: 4.9,
+      },
+      {
+        id: "instructor-5",
+        name: "Rahul Deka",
+        experience: 5,
+        rating: 4.7,
+      },
+    ],
+
+    vehicles: [
+      {
+        id: "vehicle-5",
+        name: "Hyundai Aura",
+        transmission: "Manual",
+      },
+      {
+        id: "vehicle-6",
+        name: "Tata Altroz",
+        transmission: "Manual",
+      },
+    ],
+
+    reviews: [
+      {
+        id: "review-6",
+        learnerName: "Ananya Das",
+        rating: 5,
+        comment: "Excellent training and very professional instructors.",
+        date: "1 week ago",
+      },
+      {
+        id: "review-7",
+        learnerName: "Kunal Bora",
+        rating: 5,
+        comment: "One of the best driving schools I have experienced.",
+        date: "1 month ago",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "City Wheels Driving Institute",
+    image: "/school/polish-driving-school-sign.webp",
+    description:
+      "Modern driving institute focused on safe driving habits, practical training and learner confidence.",
+    rating: 4.8,
+    reviewCount: 194,
+    distance: 6.8,
+    startingPrice: 4000,
+    verified: true,
+
+    address: {
+      line: "VIP Road",
+      area: "Six Mile",
+      city: "Guwahati",
+      state: "Assam",
+      pinCode: "781022",
+    },
+
+    phone: "9123456789",
+
+    courses: [
+      {
+        id: "course-5",
+        name: "Complete Driving Course",
+        description:
+          "Full practical training including city roads and test preparation.",
+        duration: "20 hours",
+        price: 4000,
+      },
+      {
+        id: "course-6",
+        name: "Highway Training",
+        description: "Focused highway and long-distance driving practice.",
+        duration: "10 hours",
+        price: 2800,
+      },
+      {
+        id: "course-7",
         name: "Highway Training",
         description: "Focused highway and long-distance driving practice.",
         duration: "10 hours",

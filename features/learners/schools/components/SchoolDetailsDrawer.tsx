@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 
 import type { DrivingSchool } from "../types/school";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { useRouter } from "next/navigation";
 
 interface SchoolDetailsDrawerProps {
   school: DrivingSchool | null;
@@ -38,6 +39,8 @@ export default function SchoolDetailsDrawer({
     return null;
   }
 
+  const router = useRouter()
+  
   const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     `${school.address.line}, ${school.address.area}, ${school.address.city}, ${school.address.state}, ${school.address.pinCode}`
   )}`;
@@ -504,7 +507,10 @@ export default function SchoolDetailsDrawer({
             type="button"
             size="lg"
             className="mt-3 w-full bg-emerald-600 text-white hover:bg-emerald-700 dark:bg-emerald-700 dark:text-white dark:hover:bg-emerald-300"
-            onClick={() => onEnroll?.(school.id)}
+            onClick={() => {
+              onEnroll?.(school.id);
+              router.push(`/learner/payment?schoolId=${school.id}`);
+            }}
           >
             Enroll Now
           </Button>

@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 
 import SchoolCard from "./SchoolCard";
 import type { DrivingSchool } from "../types/school";

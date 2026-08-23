@@ -34,39 +34,29 @@ export default function LearnerSchoolsPage() {
     const [appliedFilters, setAppliedFilters] =
         useState<SchoolFilters>(defaultFilters);
 
-    /* --------------------------------
-       Filter schools
-    -------------------------------- */
-
     const filteredSchools = useMemo(() => {
         const query = search.trim().toLowerCase();
 
         return schoolsData.filter((school) => {
-            /* Search */
             const matchesSearch =
-                query.length === 0 ||
+                !query ||
                 school.name.toLowerCase().includes(query) ||
                 school.address.area.toLowerCase().includes(query) ||
                 school.address.city.toLowerCase().includes(query);
 
-            /* Distance */
             const matchesDistance =
                 school.distance <= appliedFilters.maxDistance;
 
-            /* Rating */
             const matchesRating =
                 school.rating >= appliedFilters.minRating;
 
-            /* Price */
             const matchesPrice =
                 school.startingPrice <= appliedFilters.maxPrice;
 
-            /* Verified */
             const matchesVerified =
                 !appliedFilters.verifiedOnly ||
                 school.verified === true;
 
-            /* Transmission */
             const matchesTransmission =
                 appliedFilters.transmission === "all" ||
                 school.vehicles.some(
@@ -86,18 +76,10 @@ export default function LearnerSchoolsPage() {
         });
     }, [search, appliedFilters]);
 
-    /* --------------------------------
-       Apply filters
-    -------------------------------- */
-
     const handleApplyFilters = () => {
         setAppliedFilters(filters);
         setFilterOpen(false);
     };
-
-    /* --------------------------------
-       Reset filters
-    -------------------------------- */
 
     const handleResetFilters = () => {
         setFilters(defaultFilters);
@@ -105,22 +87,24 @@ export default function LearnerSchoolsPage() {
     };
 
     return (
-        <div className="min-h-screen w-full overflow-x-hidden bg-white dark:bg-neutral-950">
+        <div className="min-h-screen w-full bg-white dark:bg-neutral-950">
             <main className="w-full">
-                <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-                    <div className="space-y-8">
+                <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
 
-                        {/* Header */}
+                    {/* IMPORTANT:
+                        This container contains BOTH
+                        the sticky header AND the school grid.
+                    */}
+                    <div className="w-full space-y-8">
+
                         <SchoolsHeader
                             search={search}
                             onSearchChange={setSearch}
                             location="Guwahati"
-                            onFilterClick={() =>
-                                setFilterOpen(true)
-                            }
+                            onFilterClick={() => setFilterOpen(true)}
                         />
 
-                        {/* Result count */}
+                        {/* Result Count */}
                         <div className="flex items-center justify-between">
                             <p className="text-sm text-neutral-500 dark:text-zinc-500">
                                 {filteredSchools.length}{" "}
@@ -131,7 +115,7 @@ export default function LearnerSchoolsPage() {
                             </p>
                         </div>
 
-                        {/* School cards */}
+                        {/* School Grid */}
                         <SchoolGrid
                             schools={filteredSchools}
                             onSelect={setSelectedSchool}
@@ -140,9 +124,8 @@ export default function LearnerSchoolsPage() {
                 </div>
             </main>
 
-            {/* School details */}
+            {/* School Details */}
             <SchoolDetailsDrawer
-            
                 school={selectedSchool}
                 open={selectedSchool !== null}
                 onOpenChange={(open) => {
@@ -150,11 +133,7 @@ export default function LearnerSchoolsPage() {
                         setSelectedSchool(null);
                     }
                 }}
-                onEnroll={(schoolId) => {
-                    console.log("Enroll at school:", schoolId);
-                }}
             />
-
 
             {/* Filters */}
             <SchoolFiltersDialog

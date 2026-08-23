@@ -1,6 +1,6 @@
 "use client";
 
-import DashboardHeader from "@/components/dashboard/learner/DashboardHeader";
+
 
 import WelcomeSection from "@/features/learners/dashboard/components/WelcomeSection";
 import CompleteSetupSection from "@/features/learners/dashboard/components/CompleteSetupSection";
@@ -15,11 +15,11 @@ import DashboardSupport from "@/features/learners/dashboard/components/Dashboard
 
 export default function LearnerDashboardPage() {
 
-  const onboardingIncomplete = true;
+  const onboardingIncomplete = false;
 
   return (
     <div className="min-h-screen w-full min-w-0 overflow-x-hidden bg-white dark:bg-neutral-950">
-      <DashboardHeader />
+
 
       <main className="min-w-0 overflow-x-hidden">
         <div className="mx-auto w-full max-w-7xl min-w-0 px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
