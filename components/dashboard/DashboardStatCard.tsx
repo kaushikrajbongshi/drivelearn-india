@@ -49,7 +49,7 @@ export default function DashboardStatCard({
             {title}
           </CardTitle>
 
-          <h2 className="text-3xl font-bold tracking-tight">
+          <h2 className="text-3xl font-bold tracking-tight mt-3">
             {value}
           </h2>
         </div>

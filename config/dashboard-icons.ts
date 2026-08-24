@@ -33,6 +33,7 @@ import {
   IndianRupee,
   Clock3,
   BookOpen,
+  CheckCircle,
 } from "lucide-react";
 
 export const dashboardIcons = {
@@ -87,7 +88,7 @@ export const dashboardIcons = {
   indianRupee: IndianRupee,
   clock3: Clock3,
   active: Briefcase,
-
+  checkCircle: CheckCircle,
 } as const;
 
 export type DashboardIcon = keyof typeof dashboardIcons;
