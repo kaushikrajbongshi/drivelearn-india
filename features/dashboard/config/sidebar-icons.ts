@@ -18,6 +18,7 @@ import {
   Building2,
   BookOpen,
   Star,
+  Clock3
 } from "lucide-react";
 
 export const sidebarIcons = {
@@ -40,4 +41,5 @@ export const sidebarIcons = {
   school: Building2,
   "book-open": BookOpen,
   star: Star,
+  clock3: Clock3
 } as const;

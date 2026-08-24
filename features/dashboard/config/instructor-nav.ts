@@ -12,6 +12,11 @@ export const instructorNav: NavItem[] = [
     icon: "calendar-days",
   },
   {
+    title: "Availability",
+    url: "/instructor/availability",
+    icon: "clock3",
+  },
+  {
     title: "Lessons",
     url: "/instructor/lessons",
     icon: "clipboard-list",
