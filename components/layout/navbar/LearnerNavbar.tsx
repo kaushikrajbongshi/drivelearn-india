@@ -86,7 +86,7 @@ export default function LearnerNavbar() {
     };
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-neutral-200/70 bg-white/90 backdrop-blur-xl dark:border-white/[0.08] dark:bg-neutral-950/90">
+        <header className="sticky top-0 z-50 w-full border-b border-neutral-200/70 bg-red-500/90 backdrop-blur-xl dark:border-white/[0.08] dark:bg-red-950/90">
             <div className="flex h-16 w-full items-center justify-between px-5 sm:px-7 lg:px-8">
                 {/* Logo */}
                 <div className="shrink-0">
