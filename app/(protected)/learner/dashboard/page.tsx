@@ -1,49 +1,58 @@
 "use client";
 
-
-
-import WelcomeSection from "@/features/learners/dashboard/components/WelcomeSection";
 import CompleteSetupSection from "@/features/learners/dashboard/components/CompleteSetupSection";
-import NextLessonSection from "@/features/learners/dashboard/components/NextLessonSection";
-import LicenseRouteSection from "@/features/learners/dashboard/components/LicenseRouteSection";
-import TrainingProgressSection from "@/features/learners/dashboard/components/TrainingProgressSection";
+import DashboardSupport from "@/features/learners/dashboard/components/DashboardSupport";
 import InstructorSection from "@/features/learners/dashboard/components/InstructorSection";
+import LicenseRouteSection from "@/features/learners/dashboard/components/LicenseRouteSection";
+import NextLessonSection from "@/features/learners/dashboard/components/NextLessonSection";
 import PackageSection from "@/features/learners/dashboard/components/PackageSection";
 import QuickActionsSection from "@/features/learners/dashboard/components/QuickActionsSection";
 import RateLessonSection from "@/features/learners/dashboard/components/RateLessonSection";
-import DashboardSupport from "@/features/learners/dashboard/components/DashboardSupport";
+import TrainingProgressSection from "@/features/learners/dashboard/components/TrainingProgressSection";
+import WelcomeSection from "@/features/learners/dashboard/components/WelcomeSection";
+import FirstLessonBanner from "@/features/learners/lessons/components/FirstLessonBanner";
 
 export default function LearnerDashboardPage() {
-
+  /*
+   * Temporary frontend states.
+   * These will come from the learner/enrollment API later.
+   */
   const onboardingIncomplete = false;
+  const hasEnrollment = true;
+  const hasScheduledLesson = false;
 
   return (
-    <div className="min-h-screen w-full min-w-0 overflow-x-hidden bg-white dark:bg-neutral-950">
-
-
+    <div className=" w-full min-w-0 overflow-x-hidden bg-background">
       <main className="min-w-0 overflow-x-hidden">
         <div className="mx-auto w-full max-w-7xl min-w-0 px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
           <div className="mx-auto w-full max-w-5xl min-w-0 space-y-8">
             {/* Welcome */}
             <WelcomeSection />
 
+            {/* ============================================================
+                INCOMPLETE ONBOARDING
+               ============================================================ */}
             {onboardingIncomplete ? (
-              /*
-               * ============================================================
-               * INCOMPLETE ONBOARDING
-               * ============================================================
-               *
-               * Show ONLY the setup section.
-               */
               <CompleteSetupSection />
+            ) : !hasEnrollment ? (
+              /* ==========================================================
+                 NO ENROLLMENT
+                 ========================================================== */
+              <FirstLessonBanner
+                mode="browse"
+              />
+
+            ) : !hasScheduledLesson ? (
+              /* ==========================================================
+                 ENROLLED BUT FIRST LESSON NOT SCHEDULED
+                 ========================================================== */
+              <FirstLessonBanner
+                mode="schedule"
+              />
             ) : (
-              /*
-               * ============================================================
-               * COMPLETED ONBOARDING
-               * ============================================================
-               *
-               * Show the actual learner dashboard.
-               */
+              /* ==========================================================
+                 FULL LEARNER DASHBOARD
+                 ========================================================== */
               <>
                 {/* Next lesson */}
                 <NextLessonSection />

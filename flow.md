@@ -56,3 +56,57 @@ DASHBOARD
                 Rating/Review   
 
 this is good flow now start with school listing
+
+AUTH
+ ↓
+Login
+ ↓
+Verify OTP
+ ↓
+Onboarding
+ ↓
+Complete Profile
+ ↓
+DASHBOARD
+ │
+ ├── [No enrollment]
+ │       ↓
+ │   Browse Schools
+ │       ↓
+ │   School Details
+ │       ↓
+ │   Course Selection
+ │       ↓
+ │   Payment
+ │       ↓
+ │   Enrollment Success
+ │       ↓
+ │   DASHBOARD
+ │
+ └── [Enrolled]
+         ↓
+   Schedule First Lesson
+         ↓
+   Lesson Type
+         ↓
+   Date
+         ↓
+   Time
+         ↓
+   Instructor
+         ↓
+   Confirm
+         ↓
+   Booking Success
+         ↓
+   DASHBOARD
+         ↓
+   Upcoming Lesson
+         ↓
+   Attend Lesson
+         ↓
+   Lesson Completed
+         ↓
+   Progress Updated
+         ↓
+   Rating / Review
