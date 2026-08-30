@@ -18,11 +18,17 @@ export default function Sidebar({ currentStep }: SidebarProps) {
   ).length;
 
   return (
-    <aside className="flex h-full flex-col bg-[#dcf7dc] dark:bg-[#202020]">
+    <aside className="flex h-full flex-col border-r border-black/5 bg-white dark:border-red-900/30 dark:bg-[linear-gradient(145deg,#3b1118_0%,#281116_38%,#1b1417_70%,#151515_100%)]">
       <style>{`
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
-      `}</style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+    `}</style>
 
       <SidebarHeader
         completedSteps={completedSteps}

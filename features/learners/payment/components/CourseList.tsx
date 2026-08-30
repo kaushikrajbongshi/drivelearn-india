@@ -1,7 +1,7 @@
 "use client";
 
 import CourseCard from "./CourseCard";
-import type { DrivingSchool } from "@/features/learners/schools/types/school";
+import type { DrivingSchool } from "@/components/landing/schools/types/school";
 
 interface CourseListProps {
     courses: DrivingSchool["courses"];

@@ -6,12 +6,10 @@ import type { DrivingSchool } from "../types/school";
 
 interface SchoolGridProps {
     schools: DrivingSchool[];
-    onSelect: (school: DrivingSchool) => void;
 }
 
 export default function SchoolGrid({
     schools,
-    onSelect,
 }: SchoolGridProps) {
     if (schools.length === 0) {
         return (
@@ -30,12 +28,11 @@ export default function SchoolGrid({
     }
 
     return (
-        <div className="grid min-w-0 grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="grid min-w-0 grid-cols-1 gap-5 sm:grid-cols-2">
             {schools.map((school) => (
                 <div key={school.id} className="min-w-0">
                     <SchoolCard
                         school={school}
-                        onSelect={onSelect}
                     />
                 </div>
             ))}

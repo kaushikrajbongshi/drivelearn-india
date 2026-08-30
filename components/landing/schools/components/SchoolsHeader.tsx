@@ -20,16 +20,7 @@ export default function SchoolsHeader({
 }: SchoolsHeaderProps) {
   return (
     <>
-      {/* Heading */}
-      <div className="space-y-1">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-emerald-600 dark:text-emerald-400">
-          Driving Schools
-        </p>
 
-        <h1 className="text-3xl font-semibold tracking-tight text-neutral-950 dark:text-white sm:text-4xl">
-          Find the right driving school
-        </h1>
-      </div>
 
       {/* Sticky Search Bar */}
       <div
@@ -40,7 +31,7 @@ export default function SchoolsHeader({
     -mx-4
 
     border-neutral-200/70
-    bg-white/90
+    bg-transparent  
     px-4
     py-1
     backdrop-blur-xl

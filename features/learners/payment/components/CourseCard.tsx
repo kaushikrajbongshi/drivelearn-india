@@ -2,7 +2,7 @@
 
 import { Check, Clock3, Star } from "lucide-react";
 
-import type { DrivingSchool } from "@/features/learners/schools/types/school";
+import type { DrivingSchool } from "@/components/landing/schools/types/school";
 
 interface CourseCardProps {
     course: DrivingSchool["courses"][number];

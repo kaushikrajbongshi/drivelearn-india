@@ -19,7 +19,7 @@ export default function CompleteProfilePage() {
 
     console.log(data);
     showToast.success("Profile completed");
-    router.push("/learner/onboarding/driving-school");
+    router.push("/learner/onboarding/welcome");
   }
 
   return <CompleteProfileForm email={email} phone={phone} onComplete={handleComplete} />;

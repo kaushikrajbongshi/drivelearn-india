@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { Info } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-import { schoolsData } from "@/features/learners/schools/data/schoolsData";
+import { schoolsData } from "@/components/landing/schools/data/schoolsData";
 import { Button } from "@/components/ui/button";
 
 export default function PaymentSummaryPage() {

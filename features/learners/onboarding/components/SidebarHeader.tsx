@@ -19,12 +19,15 @@ export default function SidebarHeader({
     <div className="px-6 py-6">
       <Logo />
 
-      <div className="mt-5 h-1 w-full overflow-hidden rounded-full bg-foreground/10">
+      <div className="mt-5 h-1 w-full overflow-hidden rounded-full bg-black/10 dark:bg-white/10">
         <motion.div
-          className="h-full rounded-full bg-emerald-600 dark:bg-emerald-500"
+          className="h-full rounded-full bg-red-600 dark:bg-red-500"
           initial={false}
           animate={{ width: `${progress}%` }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          transition={{
+            duration: 0.5,
+            ease: [0.22, 1, 0.36, 1],
+          }}
         />
       </div>
     </div>

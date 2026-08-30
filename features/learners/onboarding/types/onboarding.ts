@@ -6,9 +6,6 @@ export interface OnboardingStep {
     | "verify-email"
     | "verify-phone"
     | "complete-profile"
-    | "choose-school"
-    | "choose-course"
-    | "payment"
     | "welcome";
 
   title: string;

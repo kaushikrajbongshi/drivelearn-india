@@ -12,6 +12,8 @@ export interface SchoolCourse {
   description: string;
   duration: string;
   price: number;
+  vehicleType: "2 Wheeler" | "4 Wheeler";
+  transmission: "Manual" | "Automatic";
 }
 
 export interface SchoolInstructor {

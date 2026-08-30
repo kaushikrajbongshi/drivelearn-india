@@ -7,7 +7,7 @@ import { useMemo } from "react";
 import CourseList from "@/features/learners/payment/components/CourseList";
 
 import { Button } from "@/components/ui/button";
-import { schoolsData } from "@/features/learners/schools/data/schoolsData";
+import { schoolsData } from "@/components/landing/schools/data/schoolsData";
 
 export default function LearnerPaymentPage() {
     const router = useRouter();

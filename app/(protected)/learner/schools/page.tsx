@@ -2,15 +2,15 @@
 
 import { useMemo, useState } from "react";
 
-import SchoolsHeader from "@/features/learners/schools/components/SchoolsHeader";
-import SchoolGrid from "@/features/learners/schools/components/SchoolGrid";
-import SchoolDetailsDrawer from "@/features/learners/schools/components/SchoolDetailsDrawer";
+import SchoolsHeader from "@/components/landing/schools/components/SchoolsHeader";
+import SchoolGrid from "@/components/landing/schools/components/SchoolGrid";
+import SchoolDetailsDrawer from "@/components/landing/schools/components/SchoolDetailsDrawer";
 import SchoolFiltersDialog, {
     type SchoolFilters,
-} from "@/features/learners/schools/components/SchoolFiltersDialog";
+} from "@/components/landing/schools/components/SchoolFiltersDialog";
 
-import { schoolsData } from "@/features/learners/schools/data/schoolsData";
-import type { DrivingSchool } from "@/features/learners/schools/types/school";
+import { schoolsData } from "@/components/landing/schools/data/schoolsData";
+import type { DrivingSchool } from "@/components/landing/schools/types/school";
 
 const defaultFilters: SchoolFilters = {
     maxDistance: 20,

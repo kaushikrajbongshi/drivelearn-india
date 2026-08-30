@@ -4,7 +4,7 @@ import { ShieldCheck } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-import type { DrivingSchool } from "@/features/learners/schools/types/school";
+import type { DrivingSchool } from "@/components/landing/schools/types/school";
 
 interface PaymentSummaryProps {
     school: DrivingSchool;
